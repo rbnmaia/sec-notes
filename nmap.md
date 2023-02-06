@@ -76,13 +76,13 @@
 ## Timing and Performance Switches
 | SWITCH | EXAMPLE	| DESCRIPTION |
 | ----------- | ----------- | ----------- |
-| ``` –host-timeout <time> ``` |	``` 1s; 4m; 2h	``` | Give up on target after this long |
-| ``` –min-rtt-timeout/max-rtt-timeout/initial-rtt-timeout <time> ``` |	``` 1s; 4m; 2h	``` | Specifies probe round trip time |
-| ``` –min-hostgroup/max-hostgroup <size<size> ``` |	``` 50; 1024	``` | Parallel host scan group sizes |
-| ``` –min-parallelism/max-parallelism <numprobes> ``` |	``` 10; 1	``` | Probe parallelization |
-| ``` –max-retries <tries> ``` |	``` 3	``` | Specify the maximum number of port scan probe retransmissions |
-| ``` –min-rate <number> ``` | ``` 100	``` | Send packets no slower than <number> per second |
-| ``` –max-rate <number> ``` | ``` 100	``` | Send packets no faster than <number> per second |
+| ``` –host-timeout <time> ``` | 1s; 4m; 2h | Give up on target after this long |
+| ``` –min-rtt-timeout/max-rtt-timeout/initial-rtt-timeout <time> ``` | 1s; 4m; 2h	| Specifies probe round trip time |
+| ``` –min-hostgroup/max-hostgroup <size<size> ``` | 50; 1024 | Parallel host scan group sizes |
+| ``` –min-parallelism/max-parallelism <numprobes> ``` | 10; 1	| Probe parallelization |
+| ``` –max-retries <tries> ``` | 3	| Specify the maximum number of port scan probe retransmissions |
+| ``` –min-rate <number> ``` | 100 | Send packets no slower than <number> per second |
+| ``` –max-rate <number> ``` | 100 | Send packets no faster than <number> per second |
 
 ## NSE Scripts
 | SWITCH | EXAMPLE	| DESCRIPTION |
@@ -128,7 +128,7 @@
 | -oX	| ``` nmap 192.168.1.1 -oX xml.file	``` | XML output to the file xml.file |
 | -oG	| ``` nmap 192.168.1.1 -oG grep.file	``` | Grepable output to the file grep.file |
 | -oA	| ``` nmap 192.168.1.1 -oA results	``` | Output in the three major formats at once |
-| -oG –	| ``` nmap 192.168.1.1 -oG –	| Grepable output to screen. -oN -, -oX – also usable |
+| -oG –	| ``` nmap 192.168.1.1 -oG –	``` | Grepable output to screen. -oN -, -oX – also usable |
 | –append-output	| ``` nmap 192.168.1.1 -oN file.file –append-output	``` | Append a scan to a previous scan file |
 | -v	| ``` nmap 192.168.1.1 -v	``` | Increase the verbosity level (use -vv or more for greater effect) |
 | -d	| ``` nmap 192.168.1.1 -d	``` | Increase debugging level (use -dd or more for greater effect) |
